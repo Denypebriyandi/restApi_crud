@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "d3649fd6-c458-44ac-9291-ccafce6a400d",
+		"name": "CODE.ID - JENIUS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVfZGF0YSI6IjIwMjEtMTAtMTFUMDY6NTk6MTEuMDYzWiIsImlhdCI6MTYzMzkzNTU1MSwiZXhwIjoxNjMzOTY0MzUxfQ.b8WN93jzLqwsKAF3EfbIsmjpzDG5UZ61yEAAv7xS1R4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "codeid.jenius1234567890",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"jaka\",\n    \"accountNumber\": \"110002\",\n    \"emailAddress\": \"jaka@mail.com\",\n    \"identityNumber\": \"31745688892\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/denypebriyandi/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"denypebriyandi",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ ALL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVfZGF0YSI6IjIwMjEtMTAtMTFUMDY6NTk6MTEuMDYzWiIsImlhdCI6MTYzMzkzNTU1MSwiZXhwIjoxNjMzOTY0MzUxfQ.b8WN93jzLqwsKAF3EfbIsmjpzDG5UZ61yEAAv7xS1R4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "codeid.jenius1234567890",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/denypebriyandi/read",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"denypebriyandi",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ - ACCOUNT NUMBER",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVfZGF0YSI6IjIwMjEtMTAtMTFUMDY6NTk6MTEuMDYzWiIsImlhdCI6MTYzMzkzNTU1MSwiZXhwIjoxNjMzOTY0MzUxfQ.b8WN93jzLqwsKAF3EfbIsmjpzDG5UZ61yEAAv7xS1R4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "codeid.jenius1234567890",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/denypebriyandi/readAccount/110001",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"denypebriyandi",
+						"readAccount",
+						"110001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ - IDENTITY NUMBER",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVfZGF0YSI6IjIwMjEtMTAtMTFUMDY6NTk6MTEuMDYzWiIsImlhdCI6MTYzMzkzNTU1MSwiZXhwIjoxNjMzOTY0MzUxfQ.b8WN93jzLqwsKAF3EfbIsmjpzDG5UZ61yEAAv7xS1R4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "codeid.jenius1234567890",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/denypebriyandi/readIdentity/31718999003",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"denypebriyandi",
+						"readIdentity",
+						"31718999003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVfZGF0YSI6IjIwMjEtMTAtMTFUMDY6NTk6MTEuMDYzWiIsImlhdCI6MTYzMzkzNTU1MSwiZXhwIjoxNjMzOTY0MzUxfQ.b8WN93jzLqwsKAF3EfbIsmjpzDG5UZ61yEAAv7xS1R4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "codeid.jenius1234567890",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountNumber\": \"110002\",\n    \"emailAddress\": \"jaka@mail.com\",\n    \"identityNumber\": \"31745688892\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/denypebriyandi/update/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"denypebriyandi",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVfZGF0YSI6IjIwMjEtMTAtMTFUMDY6NTk6MTEuMDYzWiIsImlhdCI6MTYzMzkzNTU1MSwiZXhwIjoxNjMzOTY0MzUxfQ.b8WN93jzLqwsKAF3EfbIsmjpzDG5UZ61yEAAv7xS1R4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "codeid.jenius1234567890",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/denypebriyandi/delete/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"denypebriyandi",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
